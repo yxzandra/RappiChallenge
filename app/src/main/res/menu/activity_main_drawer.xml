@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_allCategories"
+        android:title="@string/all_categories" />
+    <item
+        android:id="@+id/nav_utilities"
+        android:title="@string/utilities" />
+    <item
+        android:id="@+id/nav_games"
+        android:title="@string/games" />
+    <item
+        android:id="@+id/nav_photoAndvideos"
+        android:title="@string/photo_and_videos" />
+    <item
+        android:id="@+id/nav_socialNetworking"
+        android:title="@string/social_networking" />
+    <item
+        android:id="@+id/nav_navigation"
+        android:title="@string/navigation" />
+    <item
+        android:id="@+id/nav_livestyle"
+        android:title="@string/livestyle" />
+    <item
+        android:id="@+id/nav_Music"
+        android:title="@string/music" />
+    <item
+        android:id="@+id/nav_productivity"
+        android:title="@string/productivity" />
+    <item
+        android:id="@+id/nav_entretaiment"
+        android:title="@string/entretaiment" />
+    <item
+        android:id="@+id/nav_finance"
+        android:title="@string/finance" />
+
+
+</menu>

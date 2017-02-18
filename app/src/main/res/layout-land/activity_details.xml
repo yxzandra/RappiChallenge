@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/paddingLayout"
+    android:background="@color/icons">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+    <ImageView
+        android:layout_width="@dimen/dimenImageDetailsLandscape"
+        android:layout_height="@dimen/dimenImageDetailsLandscape"
+        android:src="@drawable/mostachin_1"
+        android:id="@+id/imageProductDetails"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingLayout"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeTitleDetailsLandscape"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/paddingBottom"
+                android:id="@+id/textTitleDetails"
+                android:textColor="@color/secondary_text"
+                />
+            <TextView
+                android:textSize="@dimen/TextSizeContentDetailsLandscape"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="@dimen/paddingBottom"
+                android:id="@+id/textCategoryDetails"/>
+            <TextView
+                android:textSize="@dimen/TextSizeContentDetailsLandscape"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textPriceDetails"/>
+            <Button
+                android:layout_width="@dimen/widthBtnLandscape"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_install"
+                android:layout_marginBottom="@dimen/paddingBottom"
+                android:text="@string/btnDetailsInstalar"
+                android:textColor="@color/icons"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars = "vertical"
+        android:id="@+id/textBodyDetails"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+</LinearLayout>
