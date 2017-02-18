@@ -11,6 +11,7 @@ import com.rappi.challenge.API.retrofit.RetrofitMagnament;
 import com.rappi.challenge.DataBase.DataBaseTransaction;
 import com.rappi.challenge.Interface.OnResponseInterface;
 import com.rappi.challenge.R;
+import com.splunk.mint.Mint;
 
 import java.util.ArrayList;
 
@@ -31,6 +32,7 @@ public class SplashActivity extends BaseActivity implements OnResponseInterface 
 
     @Override
     public void onCreateView(Bundle savedInstanceState) {
+        Mint.initAndStartSession(this.getApplication(), "9461d83b");
         initAnimation(imageMostach);
         textNotLoadDatabase.setVisibility(View.GONE);
         dataBaseTransaction = new DataBaseTransaction();

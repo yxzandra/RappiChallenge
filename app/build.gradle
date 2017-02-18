@@ -19,6 +19,16 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url "https://mint.splunk.com/gradle/"
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -40,4 +50,5 @@ dependencies {
     testCompile "org.robolectric:robolectric:3.2.2"
     testCompile 'org.mockito:mockito-all:1.9.5'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile 'com.splunk.mint:mint:5.0.0'
 }
